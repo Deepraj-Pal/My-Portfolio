@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepraj | Frontend Web Developer</title>
+    <style>
+        /* Basic Dark Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: Black;
+            color: white;
+            
+        }
+        a {
+            text-decoration: none;
+           }
+        /* Navigation Bar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            border-bottom: 2px solid white;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color:white;
+        }
+        .logo span {
+            color: #2ea043;
+        }
+        nav a {
+            margin-left: 25px;
+            color: #8b949e;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .hero p {
+            color: #8b949e;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .btn-primary {
+            background-color: #238636;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #2ea043;
+        }
+        .btn-secondary {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-secondary:hover {
+            border-color: #8b949e;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 60px 10%;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color:lightlime;
+            border: 1px solid white;
+            padding: 25px;
+            border-radius: 15px;
+            
+        }
+        .card:hover {
+            border-color: white;
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .card p {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .card-link {
+            color: blue;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid red;
+            color: yellow;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Menu -->
+    <header>
+        <div class="logo"><span>Deepraj</span> dev</div>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <div class="badge">Available for Freelance Work</div>
+        <h1>Building Clean Websites.</h1><br><br><hr>
+        <p>Hi, I'm Deepraj. A Frontend Web Developer skilled in HTML, CSS, and JavaScript.</p>
+        <div class="btn-group">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="mailto:paldeepraj30@gmail.com" class="btn-secondary">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Landing Page Design</h3>
+                <p>A modern, mobile-responsive business landing page built with pure HTML5 and CSS3.</p>
+                <a href="#" class="card-link">Live Demo →</a>
+            </div>
+            <div class="card">
+                <h3>Login & Signup UI</h3>
+                <p>Clean authentication form with input validation using JavaScript and modern CSS.</p>
+                <a href="#" class="card-link">Live Demo →</a>
+            </div>
+            <div class="card">
+                <h3>Figma to HTML Clone</h3>
+                <p>Pixel-perfect conversion of a Figma UI design into fast-loading web code.</p>
+                <a href="#" class="card-link">Live Demo →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2026 Deepraj | Built with HTML & CSS | Contact: paldeepraj30@gmail.com</p>
+    </footer>
+
+</body>
+</html>
